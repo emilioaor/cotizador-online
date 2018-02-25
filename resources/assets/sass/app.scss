@@ -1,0 +1,24 @@
+
+// Fonts
+@font-face {
+  font-family: "Calibri";
+  src: url("./calibri/Calibri.ttf");
+}
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Mis estilos
+@import "register-budget";
+
+.input-error {
+  border: #a94442 solid 1px;
+}
+.error {
+  color: #a94442;
+  font-size: 11px;
+}

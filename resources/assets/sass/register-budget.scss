@@ -1,0 +1,218 @@
+.register-budget {
+  .panel-body {
+    font-family: Calibri;
+  }
+  &__logo {
+    max-width: 50%;
+    text-align: center;
+    cursor: pointer;
+    color: $brand-success;
+    border: solid 1px $brand-success;
+    #logo {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  &__dates {
+    article {
+      &:first-child {
+        padding-right: 0;
+      }
+
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+
+    .total {
+      background-color: #f4f4f4;
+      padding: .6rem 0 .3rem;
+      input {
+        font-weight: bold;
+        border-color: #f4f4f4;
+      }
+      p {
+        font-weight: bold;
+        margin-top: .7rem;
+      }
+      .input-hover {
+        &:hover, &:focus {
+          border: 1px #ccc solid!important;
+        }
+      }
+    }
+  }
+
+  &__table {
+    margin-top: 3rem;
+    .input-hover {
+      text-align: left!important;
+      height: 3rem;
+    }
+
+    th, td {
+      border: none!important;
+    }
+
+    thead {
+      background-color: #222;
+      .input-hover {
+        color: #ffffff;
+        border-color: #222;
+        &:focus, &:hover {
+          border-color: #ffffff;
+        }
+      }
+    }
+    tbody {
+      td {
+        padding: .3rem .5rem !important;
+      }
+      a {
+        display: block;
+        text-align: center;
+        margin-top: .6rem;
+        cursor: pointer;
+      }
+    }
+  }
+  &__footer {
+    article {
+      &:first-of-type {
+        padding-right: 0;
+      }
+
+      &:last-of-type {
+        padding-left: 0;
+      }
+    }
+
+    .col-xs-3 {
+      padding-left: 0;
+    }
+    a {
+      cursor: pointer;
+      font-size: 12px;
+      display: inline-block;
+      padding: 0 .5rem;
+    }
+
+    .btn {
+      padding: 3px 10px;
+    }
+  }
+
+  input {
+    font-family: Calibri;
+    transition: none;
+    &[name="title"] {
+      font-size: 25px;
+      height: 5rem;
+      text-align: center;
+      width: 95%;
+      margin-left: 2.5%;
+      color: #ffffff;
+    }
+
+    &[name="public_id"] {
+      text-align: right;
+    }
+
+    &[name="client_label"] {
+      text-align: left;
+    }
+
+    &[name="notes_label"] {
+      text-align: left;
+    }
+
+    &[name="terms_label"] {
+      text-align: left;
+    }
+
+  }
+  .input-hover {
+    background-color: transparent;
+    border: 1px #FFFFFF solid;
+    outline: none;
+    box-shadow: none;
+    text-align: right;
+    &:hover, &:focus {
+      border: 1px #eeeeee solid;
+    }
+  }
+  thead,tfoot {
+    input {
+      width: 95%;
+      margin-left: 2.5%;
+      color: #ffffff;
+      text-align: center !important;
+    }
+    input[disabled="disabled"] {
+      color: #555;
+    }
+    #table_description_label {
+      text-align: left !important;
+    }
+  }
+  a {
+    cursor: pointer;
+  }
+  #creation_date_value[readonly="readonly"] {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  #client_label {
+    font-weight: bold;
+  }
+  #shaping_value,
+  #discount_value,
+  {
+    color: #555555;
+  }
+}
+
+h1 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+h3 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+p {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
