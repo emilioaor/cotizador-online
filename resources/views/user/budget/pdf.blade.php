@@ -143,10 +143,10 @@
                     {{ $detail->quantity }}
                 </td>
                 <td style="text-align: center;height: 30px;vertical-align: middle;padding-bottom: 10px;">
-                    {{ number_format($detail->price, 2, ',', '.') }} Bsf
+                    {{ number_format($detail->price, 0, ',', '.') }} Bsf
                 </td>
                 <td style="text-align: center;height: 30px;vertical-align: middle;padding-bottom: 10px;">
-                    {{ number_format($detail->price * $detail->quantity, 2, ',', '.') }} Bsf
+                    {{ number_format($detail->price * $detail->quantity, 0, ',', '.') }} Bsf
                 </td>
             </tr>
         @endforeach
@@ -162,7 +162,7 @@
                     {{ $budget->subtotal_footer_label }}
                 </td>
                 <td style="text-align: center;">
-                    {{ number_format($budget->subtotal_footer_value, 2, ',', '.') }} Bsf
+                    {{ number_format($budget->subtotal_footer_value, 0, ',', '.') }} Bsf
                 </td>
             </tr>
         @endif
@@ -179,9 +179,9 @@
                 </td>
                 <td style="text-align: center;height: 35px;">
                     @if($budget->discount_type === 1)
-                        {{ number_format($budget->subtotal_footer_value * ($budget->discount_value / 100), 2, ',', '.') }} Bsf
+                        {{ number_format($budget->subtotal_footer_value * ($budget->discount_value / 100), 0, ',', '.') }} Bsf
                     @else
-                        {{ number_format($budget->discount_value, 2, ',', '.') }} Bsf
+                        {{ number_format($budget->discount_value, 0, ',', '.') }} Bsf
                     @endif
                 </td>
             </tr>
@@ -195,7 +195,7 @@
                     {{ $budget->shaping_label }}
                 </td>
                 <td style="text-align: center;height: 35px;">
-                    {{ number_format($budget->shaping_value, 2, ',', '.') }} Bsf
+                    {{ number_format($budget->shaping_value, 0, ',', '.') }} Bsf
                 </td>
             </tr>
         @endif
@@ -208,7 +208,7 @@
                 {{ $budget->total_footer_label }}
             </td>
             <td style="text-align: center;height: 35px;">
-                {{ number_format($budget->total_footer_value, 2, ',', '.') }} Bsf
+                {{ number_format($budget->total_footer_value, 0, ',', '.') }} Bsf
             </td>
         </tr>
         <!-- /Footer -->
